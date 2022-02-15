@@ -17,6 +17,12 @@
 		91F6BC3C27BBFCC1005FB415 /* CVSProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC3B27BBFCC1005FB415 /* CVSProjectUITests.swift */; };
 		91F6BC3E27BBFCC1005FB415 /* CVSProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC3D27BBFCC1005FB415 /* CVSProjectUITestsLaunchTests.swift */; };
 		91F6BC4C27BBFE69005FB415 /* FlickrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC4B27BBFE69005FB415 /* FlickrViewModel.swift */; };
+		91F6BC4F27BBFEBB005FB415 /* FlickrItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC4E27BBFEBB005FB415 /* FlickrItems.swift */; };
+		91F6BC5227BBFEDD005FB415 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC5127BBFEDD005FB415 /* HTTPMethod.swift */; };
+		91F6BC5427BBFEF2005FB415 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC5327BBFEF2005FB415 /* WebService.swift */; };
+		91F6BC5827BBFF53005FB415 /* FlickrImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC5727BBFF53005FB415 /* FlickrImageTableViewCell.swift */; };
+		91F6BC5B27BBFF8F005FB415 /* FlickrSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC5A27BBFF8F005FB415 /* FlickrSearchViewController.swift */; };
+		91F6BC5E27BBFFB8005FB415 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 91F6BC5D27BBFFB8005FB415 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,11 @@
 		91F6BC3B27BBFCC1005FB415 /* CVSProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSProjectUITests.swift; sourceTree = "<group>"; };
 		91F6BC3D27BBFCC1005FB415 /* CVSProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		91F6BC4B27BBFE69005FB415 /* FlickrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrViewModel.swift; sourceTree = "<group>"; };
+		91F6BC4E27BBFEBB005FB415 /* FlickrItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrItems.swift; sourceTree = "<group>"; };
+		91F6BC5127BBFEDD005FB415 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		91F6BC5327BBFEF2005FB415 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		91F6BC5727BBFF53005FB415 /* FlickrImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageTableViewCell.swift; sourceTree = "<group>"; };
+		91F6BC5A27BBFF8F005FB415 /* FlickrSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F6BC5E27BBFFB8005FB415 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +113,9 @@
 		91F6BC1927BBFCC0005FB415 /* CVSProject */ = {
 			isa = PBXGroup;
 			children = (
+				91F6BC5927BBFF65005FB415 /* Controller */,
+				91F6BC5527BBFF05005FB415 /* View */,
+				91F6BC4D27BBFEA4005FB415 /* Model */,
 				91F6BC4A27BBFE47005FB415 /* VIewModel */,
 				91F6BC1A27BBFCC0005FB415 /* AppDelegate.swift */,
 				91F6BC1C27BBFCC0005FB415 /* SceneDelegate.swift */,
@@ -138,6 +153,48 @@
 			path = VIewModel;
 			sourceTree = "<group>";
 		};
+		91F6BC4D27BBFEA4005FB415 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91F6BC5027BBFECA005FB415 /* API */,
+				91F6BC4E27BBFEBB005FB415 /* FlickrItems.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91F6BC5027BBFECA005FB415 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				91F6BC5127BBFEDD005FB415 /* HTTPMethod.swift */,
+				91F6BC5327BBFEF2005FB415 /* WebService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		91F6BC5527BBFF05005FB415 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91F6BC5627BBFF11005FB415 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91F6BC5627BBFF11005FB415 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				91F6BC5727BBFF53005FB415 /* FlickrImageTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		91F6BC5927BBFF65005FB415 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91F6BC5A27BBFF8F005FB415 /* FlickrSearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +211,9 @@
 			dependencies = (
 			);
 			name = CVSProject;
+			packageProductDependencies = (
+				91F6BC5D27BBFFB8005FB415 /* Kingfisher */,
+			);
 			productName = CVSProject;
 			productReference = 91F6BC1727BBFCC0005FB415 /* CVSProject.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +286,9 @@
 				Base,
 			);
 			mainGroup = 91F6BC0E27BBFCC0005FB415;
+			packageReferences = (
+				91F6BC5C27BBFFB8005FB415 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 91F6BC1827BBFCC0005FB415 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,9 +333,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F6BC1F27BBFCC0005FB415 /* ViewController.swift in Sources */,
+				91F6BC5B27BBFF8F005FB415 /* FlickrSearchViewController.swift in Sources */,
 				91F6BC1B27BBFCC0005FB415 /* AppDelegate.swift in Sources */,
+				91F6BC5827BBFF53005FB415 /* FlickrImageTableViewCell.swift in Sources */,
+				91F6BC5427BBFEF2005FB415 /* WebService.swift in Sources */,
+				91F6BC5227BBFEDD005FB415 /* HTTPMethod.swift in Sources */,
 				91F6BC1D27BBFCC0005FB415 /* SceneDelegate.swift in Sources */,
 				91F6BC4C27BBFE69005FB415 /* FlickrViewModel.swift in Sources */,
+				91F6BC4F27BBFEBB005FB415 /* FlickrItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +684,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91F6BC5C27BBFFB8005FB415 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91F6BC5D27BBFFB8005FB415 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91F6BC5C27BBFFB8005FB415 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91F6BC0F27BBFCC0005FB415 /* Project object */;
 }
