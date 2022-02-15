@@ -16,6 +16,7 @@
 		91F6BC3227BBFCC1005FB415 /* CVSProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC3127BBFCC1005FB415 /* CVSProjectTests.swift */; };
 		91F6BC3C27BBFCC1005FB415 /* CVSProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC3B27BBFCC1005FB415 /* CVSProjectUITests.swift */; };
 		91F6BC3E27BBFCC1005FB415 /* CVSProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC3D27BBFCC1005FB415 /* CVSProjectUITestsLaunchTests.swift */; };
+		91F6BC4C27BBFE69005FB415 /* FlickrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6BC4B27BBFE69005FB415 /* FlickrViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		91F6BC3727BBFCC1005FB415 /* CVSProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVSProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F6BC3B27BBFCC1005FB415 /* CVSProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSProjectUITests.swift; sourceTree = "<group>"; };
 		91F6BC3D27BBFCC1005FB415 /* CVSProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		91F6BC4B27BBFE69005FB415 /* FlickrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		91F6BC1927BBFCC0005FB415 /* CVSProject */ = {
 			isa = PBXGroup;
 			children = (
+				91F6BC4A27BBFE47005FB415 /* VIewModel */,
 				91F6BC1A27BBFCC0005FB415 /* AppDelegate.swift */,
 				91F6BC1C27BBFCC0005FB415 /* SceneDelegate.swift */,
 				91F6BC1E27BBFCC0005FB415 /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				91F6BC3D27BBFCC1005FB415 /* CVSProjectUITestsLaunchTests.swift */,
 			);
 			path = CVSProjectUITests;
+			sourceTree = "<group>";
+		};
+		91F6BC4A27BBFE47005FB415 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91F6BC4B27BBFE69005FB415 /* FlickrViewModel.swift */,
+			);
+			path = VIewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				91F6BC1F27BBFCC0005FB415 /* ViewController.swift in Sources */,
 				91F6BC1B27BBFCC0005FB415 /* AppDelegate.swift in Sources */,
 				91F6BC1D27BBFCC0005FB415 /* SceneDelegate.swift in Sources */,
+				91F6BC4C27BBFE69005FB415 /* FlickrViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
